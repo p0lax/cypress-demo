@@ -1,0 +1,24 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p0lax/cypress-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p0lax/cypress-demo/issues"
+  },
+  "homepage": "https://github.com/p0lax/cypress-demo#readme",
+  "devDependencies": {
+    "cypress": "9.6.1",
+    "cypress-mochawesome-reporter": "3.0.1",
+    "typescript": "4.6.4"
+  }
+}
