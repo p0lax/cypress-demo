@@ -16,6 +16,7 @@
  * @type {Cypress.PluginConfig}
  */
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
+const cucumber = require('cypress-cucumber-preprocessor').default;
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
   on('before:run', async (details) => {
@@ -27,6 +28,8 @@ module.exports = (on, config) => {
     console.log('override after:run');
     await afterRunHook();
   });
+
+  on('file:preprocessor', cucumber());
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 };

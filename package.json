@@ -18,7 +18,11 @@
   "homepage": "https://github.com/p0lax/cypress-demo#readme",
   "devDependencies": {
     "cypress": "9.6.1",
+    "cypress-cucumber-preprocessor": "4.3.1",
     "cypress-mochawesome-reporter": "3.0.1",
     "typescript": "4.6.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
