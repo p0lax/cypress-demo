@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,7 @@
   },
   "homepage": "https://github.com/p0lax/cypress-demo#readme",
   "devDependencies": {
-    "cypress": "9.6.1",
-    "cypress-cucumber-preprocessor": "4.3.1",
-    "cypress-mochawesome-reporter": "3.0.1",
-    "typescript": "4.6.4"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "@badeball/cypress-cucumber-preprocessor": "15.0.0",
+    "cypress": "12.2.0"
   }
 }
